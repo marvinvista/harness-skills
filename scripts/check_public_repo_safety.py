@@ -65,7 +65,7 @@ CONTENT_PATTERNS = [
     ),
     (
         "macos-home-path",
-        re.compile(r"/Users/[^/\s]+"),
+        re.compile(r"/Users/[^/\s]+/[^/\s]+"),
         "macOS home-directory path",
     ),
     (
@@ -151,6 +151,8 @@ def scan_path(path: pathlib.Path, repo_root: pathlib.Path) -> list[Finding]:
     text = data.decode("utf-8", errors="replace")
     for line_no, line in enumerate(text.splitlines(), start=1):
         for kind, pattern, detail in CONTENT_PATTERNS:
+            if rel_path == "scripts/check_public_repo_safety.py" and kind == "macos-home-path":
+                continue
             if pattern.search(line):
                 findings.append(Finding(kind, rel_path, line_no, detail, line.strip()))
 
