@@ -1,8 +1,6 @@
 # Harness Skills
 
-Reusable skills for teams that want Codex to do meaningful implementation work inside real repositories.
-
-Use this repo as a starting point for building your own internal skill pack or adapting specific skills into an existing Codex workflow.
+Harness Skills is a reusable skill pack for teams that want Codex to do meaningful implementation work inside real repositories. It helps you bootstrap agent-ready repos, verify UI journeys, capture bug evidence, run cleaner PR review loops, and reduce agent drift.
 
 ## Start Here
 
