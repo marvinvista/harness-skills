@@ -1,0 +1,4 @@
+interface:
+  display_name: "Update Quality Grades"
+  short_description: "Score domains and layers against quality bars"
+  default_prompt: "Use $update-quality-grades to refresh repository quality grades and identify the weakest areas for cleanup or follow-up work."

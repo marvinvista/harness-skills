@@ -1,0 +1,4 @@
+interface:
+  display_name: "Provision Worktree Stack"
+  short_description: "Boot isolated app stacks per worktree"
+  default_prompt: "Use $provision-worktree-stack to prepare an isolated worktree-local app stack for this branch or task."

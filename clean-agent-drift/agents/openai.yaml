@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Agent Drift"
+  short_description: "Find and fix repeated agent drift patterns"
+  default_prompt: "Use $clean-agent-drift to scan this repository for repeated agent-written drift patterns and prepare targeted cleanup changes."

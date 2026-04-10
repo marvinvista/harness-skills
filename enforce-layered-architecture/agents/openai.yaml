@@ -1,0 +1,4 @@
+interface:
+  display_name: "Enforce Layered Architecture"
+  short_description: "Check dependency boundaries and layering rules"
+  default_prompt: "Use $enforce-layered-architecture to check this repo for dependency-direction and layering violations and tighten the structural rules."

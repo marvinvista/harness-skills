@@ -1,0 +1,4 @@
+interface:
+  display_name: "Garden Repo Docs"
+  short_description: "Audit and repair repo documentation drift"
+  default_prompt: "Use $garden-repo-docs to scan this repository for stale docs, broken links, and missing indexes."

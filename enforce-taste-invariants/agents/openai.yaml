@@ -1,0 +1,4 @@
+interface:
+  display_name: "Enforce Taste Invariants"
+  short_description: "Check mechanical style and taste rules"
+  default_prompt: "Use $enforce-taste-invariants to check this repository for agreed mechanical style rules and tighten the invariant set where needed."

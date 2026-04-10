@@ -1,0 +1,4 @@
+interface:
+  display_name: "Triage Observability"
+  short_description: "Inspect logs, metrics, and traces locally"
+  default_prompt: "Use $triage-observability to investigate this worktree using logs, metrics, traces, and performance budgets."

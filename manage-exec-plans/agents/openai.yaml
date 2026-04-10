@@ -1,0 +1,4 @@
+interface:
+  display_name: "Manage Exec Plans"
+  short_description: "Create and maintain repo execution plans"
+  default_prompt: "Use $manage-exec-plans to create or update the execution plan for this multi-step change."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scaffold Agent Repo"
+  short_description: "Bootstrap an agent-first repository layout"
+  default_prompt: "Use $scaffold-agent-repo to initialize an agent-first repository with a short AGENTS.md, indexed docs, execution-plan folders, and starter harness structure."

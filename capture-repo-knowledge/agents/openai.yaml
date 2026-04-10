@@ -1,0 +1,4 @@
+interface:
+  display_name: "Capture Repo Knowledge"
+  short_description: "Turn tacit context into repo artifacts"
+  default_prompt: "Use $capture-repo-knowledge to turn these notes or decisions into the right repository-local document."

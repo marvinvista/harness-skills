@@ -1,0 +1,4 @@
+interface:
+  display_name: "Record Bug Evidence"
+  short_description: "Capture before and after bug artifacts"
+  default_prompt: "Use $record-bug-evidence to build a before-and-after evidence bundle for this bug, including repro notes and artifact summaries."

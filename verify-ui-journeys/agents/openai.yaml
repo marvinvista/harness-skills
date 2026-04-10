@@ -1,0 +1,4 @@
+interface:
+  display_name: "Verify UI Journeys"
+  short_description: "Reproduce and verify browser UI flows"
+  default_prompt: "Use $verify-ui-journeys to reproduce this browser issue, capture evidence, and validate the fix end to end."
