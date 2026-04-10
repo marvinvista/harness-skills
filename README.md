@@ -1,15 +1,36 @@
 # Harness Skills
 
-Public runtime surface for the Harness skills pack.
+Reusable skills for teams that want Codex to do meaningful implementation work inside real repositories.
 
-This repository intentionally contains only the files a user needs to use the skills:
+These skills are most useful for engineering teams that want an agent-friendly repo shape, repeatable debugging and review loops, and lightweight guardrails that keep agent output adaptable instead of brittle.
 
-- `index.md`
-- each exported skill's `SKILL.md`
-- each exported skill's `agents/openai.yaml`
-- the `scripts/`, `references/`, and `assets/` files directly linked from `SKILL.md`
+## Who This Is For
 
-The private authoring repository keeps the full source workflow and the complete commit history. This public repository has its own separate history.
+- Teams using Codex heavily across product or infrastructure repos
+- Repositories that need better docs, plan artifacts, validation loops, and reproducible debugging workflows
+- Users willing to adapt templates, scripts, and checklists to their own stack instead of treating this repo as a drop-in framework
+
+## Start Here
+
+1. Read [`index.md`](index.md) and choose the closest workflow to your current pain.
+2. Start with one or two skills, not the whole pack.
+3. Copy the skill folders you need into your own setup or use them as references for your internal skill library.
+4. Rewrite the linked `references/`, `scripts/`, and `assets/` files so they match your repo layout, commands, and team conventions.
+
+## Good First Adoption Paths
+
+- New repo or migration: `scaffold-agent-repo` -> `capture-repo-knowledge` -> `manage-exec-plans`
+- Browser-visible bug or regression: `provision-worktree-stack` -> `verify-ui-journeys` -> `record-bug-evidence`
+- Cleanup and quality loop: `triage-observability` -> `clean-agent-drift` -> `enforce-layered-architecture` -> `enforce-taste-invariants` -> `update-quality-grades`
+
+## What You Will Usually Adapt
+
+- Repo structure assumptions such as docs folders, plan locations, and `AGENTS.md` conventions
+- Validation commands, CI checks, and PR review routines
+- Route maps, local test accounts, flaky-flow notes, and environment bootstrap commands
+- Architecture rules, naming rules, logging conventions, and quality rubrics
+
+The goal is not to preserve these skills verbatim. The goal is to help your team reach a repo shape that your agents and humans can both navigate confidently.
 
 ## Included Skills
 
@@ -27,7 +48,15 @@ The private authoring repository keeps the full source workflow and the complete
 - `update-quality-grades`: Score repository domains or architectural layers against a defined quality rubric, render a quality report, and highlight the weakest areas for follow-up work. Use when the repo maintains a QUALITY_SCORE-style document, when cleanup work needs prioritization, or when you want a repeatable grading pass instead of ad hoc quality opinions.
 - `verify-ui-journeys`: Boot an app in an isolated worktree, drive key UI journeys with browser tooling, capture snapshots or recordings, reproduce bugs, validate fixes, and summarize before-and-after evidence. Use when a task involves user-visible behavior, browser-based repro steps, or regression verification.
 
-## Export Policy
+## Why This Repo Is Small
 
-- Exported file count: `119`
-- See `PUBLIC_MANIFEST.md` for the exact file list.
+This public repository intentionally contains only the user-facing runtime surface:
+
+- `index.md`
+- each exported skill's `SKILL.md`
+- each exported skill's `agents/openai.yaml`
+- the `scripts/`, `references/`, and `assets/` files linked from `SKILL.md`
+
+Current exported file count: `119`
+
+See `PUBLIC_MANIFEST.md` for the exact file list. The private authoring repository keeps the broader maintenance workflow and its separate commit history.
