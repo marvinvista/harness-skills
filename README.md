@@ -26,6 +26,7 @@ See [`index.md`](index.md) for the full skill map and use [`PUBLIC_MANIFEST.md`]
 
 ## Public Repo Safety
 
-- Run `python3 scripts/check_public_repo_safety.py` before publishing changes.
+- Run `python3 scripts/validate_skill_pack.py` for the repo-wide harness validation.
+- The privacy and personal-data scan lives in `scripts/check_public_repo_safety.py` and is invoked through the shared validator.
 - This repo includes a tracked pre-push hook in `.githooks/pre-push` and a GitHub Actions workflow in `.github/workflows/public-repo-safety.yml`.
 - Keep your repo-local git email on a GitHub noreply address for public commits.

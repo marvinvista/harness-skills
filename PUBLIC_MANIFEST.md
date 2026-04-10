@@ -4,7 +4,13 @@ These are the minimum files exported for public users.
 
 ## Root Files
 
+- `README.md`
+- `PUBLIC_MANIFEST.md`
 - `index.md`
+- `.githooks/pre-push`
+- `.github/workflows/public-repo-safety.yml`
+- `scripts/check_public_repo_safety.py`
+- `scripts/validate_skill_pack.py`
 
 ## capture-repo-knowledge
 

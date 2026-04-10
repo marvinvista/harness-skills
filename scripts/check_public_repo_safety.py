@@ -81,6 +81,8 @@ SAFE_EMAIL_DOMAINS = {
     "example.net",
     "localhost",
 }
+
+
 @dataclass
 class Finding:
     kind: str

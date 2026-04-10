@@ -23,6 +23,7 @@ Treat the first patch as the start of the work, not the finish line. Keep tighte
 3. Fix, validate, and loop.
 - Batch related fixes together.
 - Rerun the relevant validation commands, not just the smallest local check.
+- For changes in this skill pack itself, run `python3 scripts/validate_skill_pack.py` as the repo-wide harness check.
 - Use [`scripts/rerun_validation_suite.sh`](scripts/rerun_validation_suite.sh) for repeatable command sets.
 
 4. Respond with evidence.
@@ -43,6 +44,7 @@ Escalate when the remaining blocker is not mechanical:
 - [`scripts/summarize_pr_risks.py`](scripts/summarize_pr_risks.py): Summarize file-level risk signals in the current diff.
 - [`scripts/collect_review_feedback.sh`](scripts/collect_review_feedback.sh): Pull PR comments through `gh`.
 - [`scripts/rerun_validation_suite.sh`](scripts/rerun_validation_suite.sh): Re-run a sequence of validation commands.
+- [`../scripts/validate_skill_pack.py`](../scripts/validate_skill_pack.py): Repo-wide harness validation entrypoint for this skill pack.
 - [`references/review-checklist.md`](references/review-checklist.md): Core review pass.
 - [`references/pr-ready-criteria.md`](references/pr-ready-criteria.md): Ready-to-merge bar.
 - [`references/common-regression-patterns.md`](references/common-regression-patterns.md): Typical misses to re-check.

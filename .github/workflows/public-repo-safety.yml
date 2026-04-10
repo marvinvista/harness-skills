@@ -18,5 +18,5 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Scan tracked files for secrets and personal data
-        run: python3 scripts/check_public_repo_safety.py
+      - name: Run harness validation
+        run: python3 scripts/validate_skill_pack.py
