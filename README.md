@@ -23,3 +23,9 @@ Harness Skills is a reusable skill pack for teams that want Codex to do meaningf
 - Architecture rules, naming rules, logging conventions, and quality rubrics
 
 See [`index.md`](index.md) for the full skill map and use [`PUBLIC_MANIFEST.md`](PUBLIC_MANIFEST.md) if you need the exact exported file list.
+
+## Public Repo Safety
+
+- Run `python3 scripts/check_public_repo_safety.py` before publishing changes.
+- This repo includes a tracked pre-push hook in `.githooks/pre-push` and a GitHub Actions workflow in `.github/workflows/public-repo-safety.yml`.
+- Keep your repo-local git email on a GitHub noreply address for public commits.
